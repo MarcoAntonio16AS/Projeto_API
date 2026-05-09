@@ -1,18 +1,10 @@
-                        REGRAS DE NEGÓCIO E DE USABILIDADE + ORIENTAÇÕES:
+                  REGRAS DE NEGÓCIO E DE USABILIDADE + ORIENTAÇÕES:
 
-    Necessário que o app a ser criado seja capaz de cadastrar alunos diretamente em um
+  Necessário que o app a ser criado seja capaz de cadastrar alunos diretamente em um
 banco de dados do tipo MySQL
 
-    Utilização do banco MySQL e que a aplicação converse com ele, salvando os dados e os
+  Utilização do banco MySQL e que a aplicação converse com ele, salvando os dados e os
 retornando quando chamados
-
-=============================================================================================
-    Utilizar Node.js + Express.js integrado ao banco MySQL
-    Receber dados dos alunos;
-    Validar informações obrigatórias;
-    Calcular o resulltado acadêmico do aluno;
-    Retornar o status do aluno
-=============================================================================================
 
 =============================================================================================
     > POST/Alunos
