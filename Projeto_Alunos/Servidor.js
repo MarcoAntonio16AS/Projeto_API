@@ -79,7 +79,7 @@ app.post('/alunos', (req, res) => {
 
 // Preparação da String que será executada no banco de dados.
     const sql = `INSERT INTO alunos
-(nome, email, nota1, nota2, nota_final, status)
+(nome, email, nota1, nota2, notaFinal, status)
 VALUES (?, ?, ?, ?, ?, ?)`;
 
 
@@ -90,8 +90,12 @@ VALUES (?, ?, ?, ?, ?, ?)`;
 
             //Para caso dê erro na hora de executar a query.
             if (err) {
+
+                console.log(err); // Log do erro para depuração e debug
+
                 return res.status(500).json({ 
-                    error: 'Erro ao inserir aluno no banco de dados.' });
+                    error: err.message 
+                }); // Retorno de erro para o cliente, com a mensagem do erro
             }
 
 
